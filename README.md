@@ -33,8 +33,6 @@ picture indicate outflows on the right end of the rain drains.
 
 <p align="center">
   <img  style="text-align:center" src="https://github.com/albifnt/Rain-drain-programming-exercise/blob/main/img/Wall.PNG">
-  <br>
-  Fig.1 - Rain drains example.
 </p>
 
 ## Task
@@ -54,9 +52,17 @@ number of rain drains N.
 - We assume that when the right x of the rain drain correspond to the left x of the below rain drain (as
 show in the below picture), the water of the higher rain drain is captured on the lower one.
 
+<p align="center">
+  <img  style="text-align:center" src="https://github.com/albifnt/Rain-drain-programming-exercise/blob/main/img/Figure_1.PNG">
+</p>
+
 - We assume that when the right x of the rain drain correspond to the left x of another rain drain at the
 same height (as show in the below picture), the water from the left drain moves to the right one (so they
 behave as one longer rain drain).
+
+<p align="center">
+  <img  style="text-align:center" src="https://github.com/albifnt/Rain-drain-programming-exercise/blob/main/img/Figure_2.PNG">
+</p>
 
 - We assume that the rain drains are not overlapping, otherwise the inputs are not validated.
 </p>
@@ -84,6 +90,10 @@ amount.
 Initially, the rain drains are sorted in descending order based on their height. Following that, for rain drains
 with the same height, a secondary sorting is done in ascending order according to their left horizontal
 coordinate. This prioritizes the rain drain with the smaller left x when they share the same height. 
+
+<p align="center">
+  <img  style="text-align:center" src="https://github.com/albifnt/Rain-drain-programming-exercise/blob/main/img/Figure_3.PNG">
+</p>
 
 This sorting allows for a systematic examination of each rain drain one by one. Before starting the analysis,
 one list, with length equal to the width of the wall, is prepared:
