@@ -134,6 +134,22 @@ amounts of the different rain drains fall and process the raindrops based on the
   
 </p>
 
+<p align="justify">
+The code is structured in 3 files:
+  
+  - main.py: it contains the code to run. Before running the code the user should replace the inputs: N, water_amount_per_unit_of_length, height, left_x and right_x.
+  
+  - test.py: it contains a simulation of the problem. The inputs N and amount of water/length are specified and the height, left_x and right_x input lists are generated with the generate_random_drains() function.
+  
+  - functions.py: it contains the functions.
+    
+
+The requirements.txt file contains the packages that are necessary to run the code. To install the packages run:
+
+    pip install -r requirements.txt
+
+</p>
+
 ### RUNTIME COMPLEXITY
 <p align="justify">
 To analyze the time complexity of the given algorithm, we do not investigate the functions
